@@ -1,0 +1,664 @@
+CSVHeaders,Type,BriefDescription
+uid,int,FileSpecificIndex
+chrom,str,Chromosome of the variant in hg38 build
+pos,int,Position of the variant in hg38 build
+ref_base,str,Reference allele
+alt_base,str,Alternate allele
+note_variant,str,Variant Note
+coding,str,Variant in a Coding Region
+hugo,str,HUGO gene symbol associated with the variant
+transcript,str,Transcript ID from which the variant was called
+so,str,Sequence Ontology term describing the variant
+exonno,int,Exon number in which the variant is located
+cchange,str,Coding change resulting from the variant
+achange,str,Amino acid change resulting from the variant
+all_mappings,str,All mappings of the variant
+gposend,int,Genomic position end
+numsample,int,Number of samples this file
+samples,str,Sample name this file
+tags,str,Tags
+hg19.chrom,str,Chromosome of the variant in hg19 build
+hg19.pos,int,Position of the variant in hg19 build
+thousandgenomes.af,float,Allele frequency from the 1000 Genomes Project
+thousandgenomes.afr_af,float,African allele frequency from the 1000 Genomes Project
+thousandgenomes.amr_af,float,American allele frequency from the 1000 Genomes Project
+thousandgenomes.eas_af,float,East Asian allele frequency from the 1000 Genomes Project
+thousandgenomes.eur_af,float,European allele frequency from the 1000 Genomes Project
+thousandgenomes.sas_af,float,South Asian allele frequency from the 1000 Genomes Project
+abraom.allele_freq,float,Allele frequency from the AbraOM project
+aloft.transcript,str,Transcript ID for ALoFT prediction
+aloft.affect,str,ALoFT affect prediction
+aloft.tolerant,float,ALoFT tolerant prediction score
+aloft.recessive,float,ALoFT recessive prediction score
+aloft.dominant,float,ALoFT dominant prediction score
+aloft.pred,str,ALoFT prediction category
+aloft.conf,str,Confidence in ALoFT prediction
+aloft.all,str,All ALoFT predictions
+alphamissense.am_pathogenicity,float,Pathogenicity score from AlphaMissense.
+alphamissense.am_class,str,Pathogenicity class from AlphaMissense.
+alphamissense.transcript_id,str,Transcript ID associated with the variant.
+alphamissense.uniprot_id,str,UniProt ID associated with the variant.
+alphamissense.protein_variant,str,Description of the protein variant.
+arrvars.lqt,float,Long QT syndrome score.
+arrvars.brs,float,Brugada syndrome score.
+arrvars.unaff,float,Score for unaffected individuals.
+arrvars.other,float,Score for other conditions.
+arrvars.brs_penetrance,float,Penetrance score for Brugada syndrome.
+arrvars.lqt_penetrance,float,Penetrance score for Long QT syndrome.
+arrvars.function,str,Function description related to arrhythmia variants.
+arrvars.brs_structure,str,Structural impact related to Brugada syndrome.
+arrvars.lqt_structure,str,Structural impact related to Long QT syndrome.
+arrvars.link,str,Link to more information.
+brca1_func_assay.score,float,Functional assay score for BRCA1.
+brca1_func_assay.class,str,Functional assay classification for BRCA1.
+bayesdel.bayesdel_addAF_score,float,Bayesian deleteriousness score with allele frequency.
+bayesdel.bayesdel_addAF_rankscore,float,Rank score of the Bayesian deleteriousness with allele frequency.
+bayesdel.bayesdel_addAF_pred,str,Prediction from Bayesian deleteriousness with allele frequency.
+bayesdel.bayesdel_noAF_score,float,Bayesian deleteriousness score without allele frequency.
+bayesdel.bayesdel_noAF_rankscore,float,Rank score of the Bayesian deleteriousness without allele frequency.
+bayesdel.bayesdel_noAF_pred,str,Prediction from Bayesian deleteriousness without allele frequency.
+cadd.score,float,Combined Annotation Dependent Depletion (CADD) score for exome.
+cadd.phred,float,Phred-scaled CADD score.
+cadd_exome.score,float,Combined Annotation Dependent Depletion (CADD) score for exome.
+cadd_exome.phred,float,Phred-scaled CADD score.
+ccr.pct,float,Percentile score of constrained coding regions.
+ccr.syn_density,float,Synonymous variant density in constrained coding regions.
+ccr.cpg,float,CpG site score in constrained coding regions.
+ccr.cov_score,float,Coverage score in constrained coding regions.
+ccr.resid,float,Residual score in constrained coding regions.
+ccr.resid_pct,float,Percentile of residual score in constrained coding regions.
+cedar.epi_id,str,Epigenetic ID from CEDAR.
+cedar.pubmed_id,str,PubMed ID related to epigenetic information.
+cedar.epi_ref,str,Reference allele information from CEDAR.
+cedar.epi_alt,str,Alternate allele information from CEDAR.
+cgd.condition,str,Clinical condition from Clinical Genomic Database (CGD).
+cgd.inheritance,str,Inheritance pattern from CGD.
+cgd.age_group,str,Age group affected by the condition from CGD.
+cgd.allelic_conditions,str,Allelic conditions from CGD.
+cgd.manifestation,str,Manifestations of the condition from CGD.
+cgd.intervention,str,Interventions for the condition from CGD.
+cgd.link,str,Link to more information from CGD.
+cgd.all,str,All information from CGD.
+chasmplus.pval,float,p-value from CHASMplus.
+chasmplus.score,float,Score from CHASMplus.
+chasmplus.transcript,str,Transcript ID related to CHASMplus score.
+chasmplus.all,str,All information from CHASMplus.
+civic.diseases,str,Associated diseases from CIViC.
+civic.id,str,CIViC variant ID.
+civic.molecular_profile_score,float,Molecular profile score from CIViC.
+civic.description,str,Description of the variant from CIViC.
+civic_gene.id,str,CIViC gene ID.
+civic_gene.description,str,Description of the gene from CIViC.
+civic_gene.aliases,str,Gene aliases from CIViC.
+cosmic.cosmic_id,str,COSMIC variant ID.
+cosmic.variant_count_tissue,str,Count of variants in specific tissue from COSMIC.
+cosmic.variant_count,int,Count of all variants from COSMIC.
+cosmic.transcript,str,Transcript ID from COSMIC.
+cosmic.protein_change,str,Protein change description from COSMIC.
+cosmic.match,str,Matching information from COSMIC.
+cosmic_gene.occurrences,int,Occurrences in COSMIC gene dataset.
+cosmic_gene.gene_count,str,Count of gene occurrences in COSMIC.
+cscape_coding.score,float,CScape coding score.
+cscape_coding.rankscore,float,Rank score of CScape coding.
+cgc.class,str,Classification from Cancer Gene Census (CGC).
+cgc.inheritance,str,Inheritance pattern from CGC.
+cgc.tts,str,Transcription termination site from CGC.
+cgc.ttg,str,Transcription termination gene from CGC.
+cgc.link,str,Link to more information from CGC.
+cgl.class,str,Classification from Cancer Genome Interpreter (CGI).
+cancer_genome_interpreter.resistant,int,Count of resistant cases from CGI.
+cancer_genome_interpreter.responsive,int,Count of responsive cases from CGI.
+cancer_genome_interpreter.other,int,Count of other cases from CGI.
+cancer_genome_interpreter.all,str,All information from CGI.
+cancer_hotspots.samples,str,Samples information from Cancer Hotspots.
+ccre_screen.acc_d,str,Accessibility data (D) from cCRE Screen.
+ccre_screen.acc_e,str,Accessibility data (E) from cCRE Screen.
+ccre_screen._group,str,Group information from cCRE Screen.
+ccre_screen.bound,str,Binding information from cCRE Screen.
+cardioboost.cardiomyopathy,float,Score indicating the likelihood of cardiomyopathy.
+cardioboost.cardiomyopathy1,str,Additional information related to cardiomyopathy.
+cardioboost.arrhythmias,float,Score indicating the likelihood of arrhythmias.
+cardioboost.arrhythmias1,str,Additional information related to arrhythmias.
+cvdkp.ibs,float,Inflammatory bowel syndrome score.
+cvdkp.cad,float,Coronary artery disease score.
+cvdkp.bmi,float,Body mass index score.
+cvdkp.afib,float,Atrial fibrillation score.
+cvdkp.diabetes,float,Diabetes score.
+clingen_allele_registry.allele_registry_id,str,ClinGen allele registry ID.
+clingen_allele_registry.disease,str,Disease associated with the allele.
+clingen_allele_registry.mode_of_inheritance,str,Mode of inheritance for the disease.
+clingen_allele_registry.assertion,str,Assertion about the clinical significance of the allele.
+clingen_allele_registry.evidence_codes,str,Evidence codes supporting the assertion.
+clingen_allele_registry.summary_of_interpretation,str,Summary of the interpretation of the allele.
+clingen.disease,str,Disease associated with the variant.
+clingen.mondo,str,MONDO disease ID.
+clingen.classification,str,Clinical classification of the variant.
+clingen.gene_link,str,Link to gene information.
+clingen.link,str,Link to more information.
+clinpred.score,float,Clinical prediction score.
+clinpred.rankscore,float,Rank score of the clinical prediction.
+clinvar.sig,str,Clinical significance from ClinVar.
+clinvar.disease_refs,str,Disease references from ClinVar.
+clinvar.disease_names,str,Disease names from ClinVar.
+clinvar.rev_stat,str,Review status from ClinVar.
+clinvar.id,str,ClinVar ID.
+clinvar.sig_conf,str,Confidence in clinical significance from ClinVar.
+clinvar_acmg.ps1_id,str,ACMG PS1 evidence code ID.
+clinvar_acmg.pm5_id,str,ACMG PM5 evidence code ID.
+dann_coding.dann_coding_score,float,DANN coding score.
+dann_coding.dann_rankscore,float,Rank score of the DANN coding prediction.
+denovo.PubmedId,str,PubMed ID of the de novo variant study.
+denovo.PrimaryPhenotype,str,Primary phenotype associated with the de novo variant.
+denovo.Validation,str,Validation status of the de novo variant.
+encode_tfbs.factor,str,Transcription factor binding site (TFBS) factor name from ENCODE.
+encode_tfbs.all,str,All information about the TFBS from ENCODE.
+esm1b.transcript,str,Transcript ID related to ESM1b prediction.
+esm1b.score,float,ESM1b prediction score.
+esm1b.rankscore,float,Rank score of the ESM1b prediction.
+esm1b.prediction,str,Prediction from ESM1b model.
+esm1b.all,str,All information from the ESM1b model.
+esp6500.ea_pop_af,float,Allele frequency in European American population from ESP6500.
+esp6500.aa_pop_af,float,Allele frequency in African American population from ESP6500.
+ensembl_regulatory_build.region,str,Regulatory region from Ensembl.
+ensembl_regulatory_build.ensr,str,Ensembl regulatory ID.
+ess_gene.ess_gene,str,Essential gene annotation.
+ess_gene.ess_gene_crispr,str,CRISPR-based essential gene annotation.
+ess_gene.ess_gene_crispr2,str,Alternative CRISPR-based essential gene annotation.
+ess_gene.ess_gene_gene_trap,str,Gene-trap based essential gene annotation.
+ess_gene.indispensability_score,str,Indispensability score of the gene.
+ess_gene.indispensability_pred,str,Prediction of gene indispensability.
+exac_gene.exac_pli,float,ExAC pLI score.
+exac_gene.exac_prec,float,ExAC pRec score.
+exac_gene.exac_pnull,float,ExAC pNull score.
+exac_gene.exac_nontcga_pli,float,ExAC non-TCGA pLI score.
+exac_gene.exac_nontcga_prec,float,ExAC non-TCGA pRec score.
+exac_gene.exac_nontcga_pnull,float,ExAC non-TCGA pNull score.
+exac_gene.exac_nonpsych_pli,float,ExAC non-psych pLI score.
+exac_gene.exac_nonpsych_prec,float,ExAC non-psych pRec score.
+exac_gene.exac_nonpsych_pnull,float,ExAC non-psych pNull score.
+exac_gene.exac_del_score,float,ExAC deletion score.
+exac_gene.exac_dup_score,float,ExAC duplication score.
+exac_gene.exac_cnv_score,float,ExAC CNV score.
+exac_gene.exac_cnv_flag,str,Flag indicating CNV-related issues in ExAC.
+extra_vcf_info.pos,int,Position of the original input variant.
+extra_vcf_info.ref,str,Reference base of the original input variant.
+extra_vcf_info.alt,str,Alternate base of the original input variant.
+extra_vcf_info.AC,int,"Allele count in genotypes, for each ALT allele, in the same order as listed"
+extra_vcf_info.AF,float,Allele Frequency of the variant
+extra_vcf_info.AN,int,Total number of alleles in called genotypes
+extra_vcf_info.FS,float,Phred-scaled p-value of Fisher's exact test for strand bias
+extra_vcf_info.QD,float,Variant Confidence/Quality by Depth
+extra_vcf_info.SOR,float,Symmetric Odds Ratio of 2x2 contingency table to detect strand bias
+extra_vcf_info.DP,int,Approximate read depth; some reads may have been filtered
+extra_vcf_info.FractionInformativeReads,float,Fraction of informative reads at the variant position
+extra_vcf_info.MQ,float,RMS Mapping Quality
+extra_vcf_info.MQRankSum,float,Z-score from Wilcoxon rank sum test of Alt vs. Ref read mapping qualities
+extra_vcf_info.ReadPosRankSum,float,Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias
+fathmm.ens_tid,str,Ensembl transcript ID from FATHMM.
+fathmm.ens_pid,str,Ensembl protein ID from FATHMM.
+fathmm.fathmm_score,str,FATHMM score.
+fathmm.fathmm_rscore,float,Rank score of the FATHMM prediction.
+fathmm.fathmm_pred,str,Prediction from FATHMM.
+fathmm_mkl.fathmm_mkl_coding_score,float,FATHMM-MKL coding score.
+fathmm_mkl.fathmm_mkl_coding_rankscore,float,Rank score of the FATHMM-MKL coding prediction.
+fathmm_mkl.fathmm_mkl_coding_pred,str,Prediction from FATHMM-MKL coding.
+fathmm_mkl.fathmm_mkl_group,str,Group information from FATHMM-MKL.
+fathmm_xf.score,float,FATHMM XF Score
+fathmm_xf_coding.fathmm_xf_coding_score,float,FATHMM-XF coding score.
+fathmm_xf_coding.fathmm_xf_coding_rankscore,float,Rank score of the FATHMM-XF coding prediction.
+fathmm_xf_coding.fathmm_xf_coding_pred,str,Prediction from FATHMM-XF coding.
+flank_seq.ref_seq,str,Reference sequence flanking the variant.
+flank_seq.alt_seq,str,Alternate sequence flanking the variant.
+gerp.gerp_nr,float,GERP++ NR score.
+gerp.gerp_rs,float,GERP++ RS score.
+gerp.gerp_rs_rank,float,Rank of the GERP++ RS score.
+ghis.ghis,float,GHIS (Genomic Health Impact Score).
+grasp.nhlbi,str,"NHLBI (National Heart, Lung, and Blood Institute) reference from GRASP."
+grasp.pmid,str,PubMed ID from GRASP.
+grasp.phenotype,str,Phenotype information from GRASP.
+grasp.all,str,All information from GRASP.
+gtex.gtex_gene,str,Gene information from GTEx.
+gtex.gtex_tissue,str,Tissue information from GTEx.
+gwas_catalog.disease,str,Disease information from GWAS Catalog.
+gwas_catalog.or_beta,float,Odds ratio or beta value from GWAS Catalog.
+gwas_catalog.pval,float,p-value from GWAS Catalog.
+gwas_catalog.pmid,str,PubMed ID from GWAS Catalog.
+gwas_catalog.init_samp,str,Initial sample size from GWAS Catalog.
+gwas_catalog.rep_samp,str,Replication sample size from GWAS Catalog.
+gwas_catalog.risk_allele,str,Risk allele information from GWAS Catalog.
+gwas_catalog.ci,str,Confidence interval from GWAS Catalog.
+go.bpo_name,str,Biological process ontology name from GO.
+go.bpo_id,str,Biological process ontology ID from GO.
+go.cco_name,str,Cellular component ontology name from GO.
+go.cco_id,str,Cellular component ontology ID from GO.
+go.mfo_name,str,Molecular function ontology name from GO.
+go.mfo_id,str,Molecular function ontology ID from GO.
+genehancer.feature_name,str,GeneHancer feature name.
+genehancer.score,float,GeneHancer score.
+genehancer.ident,str,Identifier from GeneHancer.
+genehancer.target_genes,str,Target genes associated with the GeneHancer feature.
+genocanyon.score,float,GenoCanyon score.
+genocanyon.rankscore,float,Rank score of the GenoCanyon prediction.
+geuvadis.gene,str,Gene information from GEUVADIS.
+hgdp.european_allele_freq,float,Allele frequency in European population from HGDP.
+hgdp.african_allele_freq,float,Allele frequency in African population from HGDP.
+hgdp.middle_eastern_allele_freq,float,Allele frequency in Middle Eastern population from HGDP.
+hgdp.east_asian_allele_freq,float,Allele frequency in East Asian population from HGDP.
+hgdp.cs_asian_allele_freq,float,Allele frequency in Central/South Asian population from HGDP.
+hgdp.oceanian_allele_freq,float,Allele frequency in Oceanian population from HGDP.
+hgdp.native_american_allele_freq,float,Allele frequency in Native American population from HGDP.
+haploreg_afr.all,str,All information from HaploReg for African population.
+haploreg_amr.all,str,All information from HaploReg for American population.
+haploreg_asn.all,str,All information from HaploReg for Asian population.
+haploreg_eur.all,str,All information from HaploReg for European population.
+hpo.id,str,HPO (Human Phenotype Ontology) ID.
+hpo.term,str,HPO term.
+hpo.all,str,All information from HPO.
+intact.intact,str,Interaction data from IntAct.
+intact.acts,str,Detailed interaction acts from IntAct.
+interpro.domain,str,Protein domain information from InterPro.
+interpro.all,str,All information from InterPro.
+linsight.value,float,LINSIGHT score.
+lrt.lrt_score,float,Likelihood Ratio Test (LRT) score.
+lrt.lrt_converted_rankscore,float,Rank score of the LRT prediction.
+lrt.lrt_pred,str,Prediction from LRT.
+lrt.lrt_omega,float,Omega score from LRT.
+loftool.loftool_score,float,LoFtool score.
+mitomap.disease,str,Disease information from MITOMAP.
+mitomap.score,float,MITOMAP score.
+mitomap.quartile,str,Quartile information from MITOMAP.
+mitomap.status,str,Status of the variant in MITOMAP.
+mitomap.pubmed,str,PubMed ID associated with the variant in MITOMAP.
+mavedb.score,float,MaveDB score.
+mavedb.accession,str,MaveDB accession number.
+metalr.score,float,MetaLR score.
+metalr.rankscore,float,Rank score of the MetaLR prediction.
+metalr.pred,str,Prediction from MetaLR.
+metasvm.score,float,MetaSVM score.
+metasvm.rankscore,float,Rank score of the MetaSVM prediction.
+metasvm.pred,str,Prediction from MetaSVM.
+mupit.link,str,Link to MuPIT (Mutations Positioning In 3D) visualization.
+mupit.hugo,str,HUGO gene symbol for MuPIT.
+mutpred1.transcript,str,Transcript ID for MutPred1.
+mutpred1.external_protein_id,str,External protein ID for MutPred1.
+mutpred1.amino_acid_substitution,str,Amino acid substitution information for MutPred1.
+mutpred1.mutpred_general_score,float,General score from MutPred1.
+mutpred1.mutpred_rankscore,float,Rank score of the MutPred1 prediction.
+mutpred1.mutpred_top5_mechanisms,str,Top 5 mechanisms predicted by MutPred1.
+mutpred_indel.score,float,MutPredIndel score.
+mutpred_indel.rankscore,float,Rank score of the MutPredIndel prediction.
+mutpred_indel.property,str,Property affected by the indel according to MutPredIndel.
+mutation_assessor.transcript,str,Transcript ID for MutationAssessor.
+mutation_assessor.score,float,Score from MutationAssessor.
+mutation_assessor.rankscore,float,Rank score of the MutationAssessor prediction.
+mutation_assessor.impact,str,Impact prediction from MutationAssessor.
+mutation_assessor.all,str,All information from MutationAssessor.
+mutationtaster.transcript,str,Transcript ID for MutationTaster.
+mutationtaster.score,float,Score from MutationTaster.
+mutationtaster.rankscore,float,Rank score of the MutationTaster prediction.
+mutationtaster.prediction,str,Prediction from MutationTaster.
+mutationtaster.model,str,Model used in MutationTaster prediction.
+mutationtaster.all,str,All information from MutationTaster.
+mutpanning.No_Cancer_Types,float,Number of cancer types associated with the variant according to MutPanning.
+mutpanning.Max_Frequency,float,Maximum frequency of the variant in cancers according to MutPanning.
+mutpanning.Best_Q_Value,float,Best Q value associated with the variant according to MutPanning.
+mutpanning.Supporting_Literature,str,Supporting literature references from MutPanning.
+mutpanning.TCGA_Marker_Papers,str,TCGA marker papers referencing the variant according to MutPanning.
+mutpanning.dNdS_Study,str,dN/dS study references for the variant according to MutPanning.
+mutpanning.Tumorportal,str,TumorPortal references for the variant according to MutPanning.
+mutpanning.Bailey_Database,str,Bailey Database references for the variant according to MutPanning.
+mutpanning.Cancer_Type,str,Specific cancer type associated with the variant according to MutPanning.
+ncbigene.ncbi_desc,str,NCBI gene description.
+ncbigene.entrez,str,NCBI Entrez gene ID.
+ndex_chd.numhit,int,Number of hits in NDEx CHD network.
+ndex_chd.networkid,str,Network ID in NDEx CHD network.
+ndex_chd.networkname,str,Network name in NDEx CHD network.
+ndex_chd.numhit,int,Number of hits in NDEx CHD network.
+ndex_chd.networkid,str,Network ID in NDEx CHD network.
+ndex_chd.networkname,str,Network name in NDEx CHD network.
+ndex.numhit,int,Number of hits in NDEx network.
+ndex.networkid,str,Network ID in NDEx network.
+ndex.networkname,str,Network name in NDEx network.
+ndex_signor.numhit,int,Number of hits in NDEx Signor network.
+ndex_signor.networkid,str,Network ID in NDEx Signor network.
+ndex_signor.networkname,str,Network name in NDEx Signor network.
+ndex_signor.numhit,int,Number of hits in NDEx Signor network.
+ndex_signor.networkid,str,Network ID in NDEx Signor network.
+ndex_signor.networkname,str,Network name in NDEx Signor network.
+omim.omim_id,str,OMIM (Online Mendelian Inheritance in Man) ID.
+oncokb.oncogenic,str,Oncogenicity status from OncoKB.
+oncokb.knownEffect,str,Known effect of the variant from OncoKB.
+oncokb.hotspot,str,Hotspot status of the variant from OncoKB.
+oncokb.highestSensitiveLevel,str,Highest sensitivity level from OncoKB.
+oncokb.highestResistanceLevel,str,Highest resistance level from OncoKB.
+oncokb.highestDiagnosticImplicationLevel,str,Highest diagnostic implication level from OncoKB.
+oncokb.highestPrognosticImplicationLevel,str,Highest prognostic implication level from OncoKB.
+oncokb.pmids,str,PubMed IDs referencing the variant from OncoKB.
+oncokb.geneSummary,str,Gene summary from OncoKB.
+oncokb.variantSummary,str,Variant summary from OncoKB.
+oncokb.tumorSummary,str,Tumor summary from OncoKB.
+oncokb.all,str,All information from OncoKB.
+original_input.chrom,str,Chromosome of the original input variant.
+original_input.pos,int,Position of the original input variant.
+original_input.ref_base,str,Reference base of the original input variant.
+original_input.alt_base,str,Alternate base of the original input variant.
+prec.prec,float,Precision score.
+prec.stat,str,Statistical information related to precision score.
+provean.transcript,str,Transcript ID for PROVEAN.
+provean.uniprot,str,UniProt ID for PROVEAN.
+provean.score,float,PROVEAN score.
+provean.rankscore,float,Rank score of the PROVEAN prediction.
+provean.prediction,str,Prediction from PROVEAN.
+provean.all,str,All information from PROVEAN.
+pangalodb.cell_type,str,Cell type from PANGALODB.
+pangalodb.ui,float,User interface score from PANGALODB.
+pangalodb.desc,str,Description from PANGALODB.
+pangalodb.germlayer,str,Germ layer from PANGALODB.
+pangalodb.organ,str,Organ from PANGALODB.
+pangalodb.sensitivity,float,Sensitivity score from PANGALODB.
+pangalodb.specificity,float,Specificity score from PANGALODB.
+pangalodb.hits,str,Hits from PANGALODB.
+phdsnpg.prediction,str,Prediction from PhD-SNPg.
+phdsnpg.score,float,Score from PhD-SNPg.
+phdsnpg.fdr,float,False discovery rate from PhD-SNPg.
+pharmgkb.id,str,PharmGKB ID.
+pharmgkb.chemicals,str,Chemicals associated with the variant from PharmGKB.
+pharmgkb.pheno_cat,str,Phenotype category from PharmGKB.
+pharmgkb.drug_assoc,str,Drug associations from PharmGKB.
+phastcons.phastcons100_vert,float,PhastCons score for 100 vertebrates.
+phastcons.phastcons100_vert_r,float,Rank score of the PhastCons prediction for 100 vertebrates.
+phastcons.phastcons470_mamm,float,PhastCons score for 470 mammals.
+phastcons.phastcons470_mamm_r,float,Rank score of the PhastCons prediction for 470 mammals.
+phastcons.phastcons17way_primate,float,PhastCons score for 17 primates.
+phastcons.phastcons17way_primate_r,float,Rank score of the PhastCons prediction for 17 primates.
+phylop.phylop100_vert,float,PhyloP score for 100 vertebrates.
+phylop.phylop100_vert_r,float,Rank score of the PhyloP prediction for 100 vertebrates.
+phylop.phylop470_mamm,float,PhyloP score for 470 mammals.
+phylop.phylop470_mamm_r,float,Rank score of the PhyloP prediction for 470 mammals.
+phylop.phylop17_primate,float,PhyloP score for 17 primates.
+phylop.phylop17_primate_r,float,Rank score of the PhyloP prediction for 17 primates.
+polyphen2.hdiv_pred,str,Prediction from PolyPhen-2 HDIV model.
+polyphen2.hvar_pred,str,Prediction from PolyPhen-2 HVAR model.
+polyphen2.hdiv_rank,float,Rank score of the PolyPhen-2 HDIV prediction.
+polyphen2.hvar_rank,float,Rank score of the PolyPhen-2 HVAR prediction.
+polyphen2.all,str,All information from PolyPhen-2.
+javierre_promoters.regions,str,Promoter regions from Javierre et al.
+pseudogene.hugo,str,HUGO gene symbol for the pseudogene.
+pseudogene.transcript,str,Transcript ID for the pseudogene.
+pubmed.n,int,Number of PubMed references.
+pubmed.term,str,Search term used for PubMed references.
+revel.transcript,str,Transcript ID related to REVEL score.
+revel.score,float,REVEL score predicting the pathogenicity of missense variants.
+revel.rankscore,float,Rank score of the REVEL prediction.
+revel.all,str,All information from REVEL.
+rvis.rvis_evs,float,Residual Variation Intolerance Score (RVIS) based on EVS data.
+rvis.rvis_perc_evs,float,Percentile of the RVIS score based on EVS data.
+rvis.rvis_fdr_exac,float,False Discovery Rate (FDR) of RVIS based on ExAC data.
+rvis.rvis_exac,float,RVIS based on ExAC data.
+rvis.rvis_perc_exac,float,Percentile of the RVIS score based on ExAC data.
+regulomedb.ra,str,Regulatory annotation from RegulomeDB.
+regulomedb.tf_binding,str,Transcription factor binding information from RegulomeDB.
+regulomedb.dnase_peak,str,DNase I hypersensitivity peak information from RegulomeDB.
+regulomedb.motif,str,Motif information from RegulomeDB.
+regulomedb.dnase_footprint,str,DNase I footprinting information from RegulomeDB.
+regulomedb.eqtl,str,Expression quantitative trait loci (eQTL) information from RegulomeDB.
+regulomedb.matched_tf_motif,str,Matched transcription factor motif from RegulomeDB.
+regulomedb.matched_dnase_footprint,str,Matched DNase I footprint from RegulomeDB.
+repeat.repeatclass,str,Class of the repeat element.
+repeat.repeatfamily,str,Family of the repeat element.
+repeat.repeatname,str,Name of the repeat element.
+sift.transcript,str,Transcript ID related to SIFT score.
+sift.prediction,str,Prediction from SIFT (damaging or tolerated).
+sift.confidence,str,Confidence score of the SIFT prediction.
+sift.score,float,SIFT score predicting the effect of amino acid substitutions.
+sift.rankscore,float,Rank score of the SIFT prediction.
+sift.med,float,Median information score from SIFT.
+sift.seqs,int,Number of sequences used in the SIFT prediction.
+sift.all,str,All information from SIFT.
+sift.multsite,str,Multiple site information from SIFT.
+segway.sum_score,float,Sum score from Segway annotations.
+segway.mean_score,float,Mean score from Segway annotations.
+segway_adrenal.fetal_adrenal_gland,str,Segway annotation for fetal adrenal gland.
+segway_blood.cd14_primary_cells,str,Segway annotation for CD14 primary cells.
+segway_blood.cd19_primary_cells_peripheral_uw,str,Segway annotation for CD19 primary cells from peripheral blood (UW).
+segway_blood.cd3_primary_cells_cord_bi,str,Segway annotation for CD3 primary cells from cord blood (BI).
+segway_blood.cd3_primary_cells_peripheral_uw,str,Segway annotation for CD3 primary cells from peripheral blood (UW).
+segway_blood.cd4_memory_primary_cells,str,Segway annotation for CD4 memory primary cells.
+segway_blood.cd4_naive_primary_cells,str,Segway annotation for CD4 naive primary cells.
+segway_blood.cd4p_cd25p_cd127m_treg_primary_cells,str,Segway annotation for CD4+ CD25+ CD127- Treg primary cells.
+segway_blood.cd4p_cd25m_cd45rap_naive_primary_cells,str,Segway annotation for CD4+ CD25- CD45RA+ naive primary cells.
+segway_blood.cd4p_cd25m_cd45rop_memory_primary_cells,str,Segway annotation for CD4+ CD25- CD45RO+ memory primary cells.
+segway_blood.cd4p_cd25m_il17p_pmamionomcyin_stimulated_th17_primary_cells,str,Segway annotation for CD4+ CD25- IL17+ PMA/Ionomycin stimulated Th17 primary cells.
+segway_blood.cd4p_cd25m_il17m_pmamionomycin_stimulated_macs_purified_th_primary_cells,str,Segway annotation for CD4+ CD25- IL17- PMA/Ionomycin stimulated MACS purified Th primary cells.
+segway_blood.cd4p_cd25m_th_primary_cells,str,Segway annotation for CD4+ CD25- Th primary cells.
+segway_blood.cd4p_cd25int_cd127p_tmem_primary_cells,str,Segway annotation for CD4+ CD25int CD127+ Tmem primary cells.
+segway_blood.cd56_primary_cells,str,Segway annotation for CD56 primary cells.
+segway_blood.cd8_memory_primary_cells,str,Segway annotation for CD8 memory primary cells.
+segway_blood.cd8_naive_primary_cells,str,Segway annotation for CD8 naive primary cells.
+segway_blood.mobilized_cd34_primary_cells_female,str,Segway annotation for mobilized CD34 primary cells from female donors.
+segway_blood.mobilized_cd34_primary_cells_male,str,Segway annotation for mobilized CD34 primary cells from male donors.
+segway_blood.monocytesmcd14p_ro01746,str,Segway annotation for monocytes (CD14+) RO01746.
+segway_blood.peripheral_blood_mononuclear_primary_cells,str,Segway annotation for peripheral blood mononuclear primary cells.
+segway_brain.brain_angular_gyrus,str,Segway annotation for brain angular gyrus.
+segway_brain.brain_anterior_caudate,str,Segway annotation for brain anterior caudate.
+segway_brain.brain_cingulate_gyrus,str,Segway annotation for brain cingulate gyrus.
+segway_brain.brain_hippocampus_middle,str,Segway annotation for brain hippocampus middle.
+segway_brain.brain_inferior_temporal_lobe,str,Segway annotation for brain inferior temporal lobe.
+segway_brain.brain_mid_frontal_lobe,str,Segway annotation for brain mid-frontal lobe.
+segway_brain.brain_substantia_nigra,str,Segway annotation for brain substantia nigra.
+segway_brain.fetal_brain_female,str,Segway annotation for fetal brain (female).
+segway_brain.fetal_brain_male,str,Segway annotation for fetal brain (male).
+segway_breast.breast_myoepithelial_cells,str,Segway annotation for breast myoepithelial cells.
+segway_breast.breast_vhmec,str,Segway annotation for breast VHMeC.
+segway_esc.esmi3_cell_line,str,Segway annotation for ESMI3 cell line.
+segway_esc.esmwa7_cell_line,str,Segway annotation for ESMWA7 cell line.
+segway_esc.hues48_cell_line,str,Segway annotation for HUES48 cell line.
+segway_esc.hues6_cell_line,str,Segway annotation for HUES6 cell line.
+segway_esc.hues64_cell_line,str,Segway annotation for HUES64 cell line.
+segway_esc_derived.h1_bmp4_derived_mesendoderm_cultured_cells,str,Segway annotation for H1 BMP4-derived mesendoderm cultured cells.
+segway_esc_derived.h1_bmp4_derived_trophoblast_cultured_cells,str,Segway annotation for H1 BMP4-derived trophoblast cultured cells.
+segway_esc_derived.h1_derived_mesenchymal_stem_cells,str,Segway annotation for H1-derived mesenchymal stem cells.
+segway_esc_derived.h1_derived_neuronal_progenitor_cultured_cells,str,Segway annotation for H1-derived neuronal progenitor cultured cells.
+segway_esc_derived.h9_derived_neuron_cultured_cells,str,Segway annotation for H9-derived neuron cultured cells.
+segway_esc_derived.h9_derived_neuronal_progenitor_cultured_cells,str,Segway annotation for H9-derived neuronal progenitor cultured cells.
+segway_esc_derived.hesc_derived_cd184p_endoderm_cultured_cells,str,Segway annotation for hESC-derived CD184+ endoderm cultured cells.
+segway_esc_derived.hesc_derived_cd56p_ectoderm_cultured_cells,str,Segway annotation for hESC-derived CD56+ ectoderm cultured cells.
+segway_esc_derived.hesc_derived_cd56p_mesoderm_cultured_cells,str,Segway annotation for hESC-derived CD56+ mesoderm cultured cells.
+segway_fat.adipose_nuclei,str,Segway annotation for adipose nuclei.
+segway_fat.mesenchymal_stem_cell_derived_adipocyte_cultured_cells,str,Segway annotation for mesenchymal stem cell-derived adipocyte cultured cells.
+segway_gi_colon.colon_smooth_muscle,str,Segway annotation for colon smooth muscle.
+segway_gi_colon.colonic_mucosa,str,Segway annotation for colonic mucosa.
+segway_gi_colon.sigmoid_colon,str,Segway annotation for sigmoid colon.
+segway_gi_duodenum.duodenum_mucosa,str,Segway annotation for duodenum mucosa.
+segway_gi_duodenum.duodenum_smooth_muscle,str,Segway annotation for duodenum smooth muscle.
+segway_gi_intestine.fetal_intestine_large,str,Segway annotation for fetal large intestine.
+segway_gi_intestine.fetal_intestine_small,str,Segway annotation for fetal small intestine.
+segway_gi_rectum.rectal_mucosaddonor_29,str,Segway annotation for rectal mucosa (donor 29).
+segway_gi_rectum.rectal_mucosaddonor_31,str,Segway annotation for rectal mucosa (donor 31).
+segway_gi_rectum.rectal_smooth_muscle,str,Segway annotation for rectal smooth muscle.
+segway_gi_stomach.fetal_stomach,str,Segway annotation for fetal stomach.
+segway_gi_stomach.gastric,str,Segway annotation for gastric tissue.
+segway_gi_stomach.stomach_mucosa,str,Segway annotation for stomach mucosa.
+segway_gi_stomach.stomach_smooth_muscle,str,Segway annotation for stomach smooth muscle.
+segway_heart.fetal_heart,str,Segway annotation for fetal heart.
+segway_heart.left_ventricle,str,Segway annotation for left ventricle of the heart.
+segway_heart.right_atrium,str,Segway annotation for right atrium of the heart.
+segway_heart.right_ventricle,str,Segway annotation for right ventricle of the heart.
+segway_ipsc.ips_df_19d11_cell_line,str,Segway annotation for iPS DF 19d11 cell line.
+segway_ipsc.ips_df_6d9_cell_line,str,Segway annotation for iPS DF 6d9 cell line.
+segway_ipsc.ipsm15b_cell_line,str,Segway annotation for iPSM15b cell line.
+segway_ipsc.ipsm18_cell_line,str,Segway annotation for iPSM18 cell line.
+segway_ipsc.ipsm20b_cell_line,str,Segway annotation for iPSM20b cell line.
+segway_kidney.fetal_kidney,str,Segway annotation for fetal kidney.
+segway_liver.adult_liver,str,Segway annotation for adult liver.
+segway_lung.fetal_lung,str,Segway annotation for fetal lung.
+segway_muscle.fetal_muscle_trunk,str,Segway annotation for fetal muscle trunk.
+segway_muscle.skeletal_muscle_female,str,Segway annotation for skeletal muscle (female).
+segway_muscle.skeletal_muscle_male,str,Segway annotation for skeletal muscle (male).
+segway_muscle_leg.fetal_muscle_leg,str,Segway annotation for fetal muscle leg.
+segway_ovary.ovary,str,Segway annotation for ovary.
+segway_placenta.fetal_placenta,str,Segway annotation for fetal placenta.
+segway_placenta.placenta_amnion,str,Segway annotation for placenta amnion.
+segway_skin.penis_foreskin_fibroblast_primary_cells_skin01,str,Segway annotation for penis foreskin fibroblast primary cells (skin01).
+segway_skin.penis_foreskin_fibroblast_primary_cells_skin02,str,Segway annotation for penis foreskin fibroblast primary cells (skin02).
+segway_skin.penis_foreskin_keratinocyte_primary_cells_skin02,str,Segway annotation for penis foreskin keratinocyte primary cells (skin02).
+segway_skin.penis_foreskin_keratinocyte_primary_cells_skin03,str,Segway annotation for penis foreskin keratinocyte primary cells (skin03).
+segway_skin.penis_foreskin_melanocyte_primary_cells_skin01,str,Segway annotation for penis foreskin melanocyte primary cells (skin01).
+segway_skin.penis_foreskin_melanocyte_primary_cells_skin03,str,Segway annotation for penis foreskin melanocyte primary cells (skin03).
+segway_stromal_connective.bone_marrow_derived_mesenchymal_stem_cell_cultured_cells,str,Segway annotation for bone marrow-derived mesenchymal stem cell cultured cells.
+segway_stromal_connective.chondrocytes_from_bone_marrow_derived_mesenchymal_stem_cell_cultured_cells,str,Segway annotation for chondrocytes from bone marrow-derived mesenchymal stem cell cultured cells.
+segway_thymus.fetal_thymus,str,Segway annotation for fetal thymus.
+segway_thymus.thymus,str,Segway annotation for thymus.
+segway_vascular.aorta,str,Segway annotation for aorta.
+siphy.pi,str,SiPhy conservation score.
+siphy.logodds,float,SiPhy log-odds score.
+siphy.logodds_rank,float,Rank of the SiPhy log-odds score.
+spliceai.ds_ag,float,SpliceAI delta score for acceptor gain.
+spliceai.ds_al,float,SpliceAI delta score for acceptor loss.
+spliceai.ds_dg,float,SpliceAI delta score for donor gain.
+spliceai.ds_dl,float,SpliceAI delta score for donor loss.
+spliceai.dp_ag,int,SpliceAI position of maximum delta score for acceptor gain.
+spliceai.dp_al,int,SpliceAI position of maximum delta score for acceptor loss.
+spliceai.dp_dg,int,SpliceAI position of maximum delta score for donor gain.
+spliceai.dp_dl,int,SpliceAI position of maximum delta score for donor loss.
+swissprot_binding.uniprotkb,str,UniProtKB accession number for binding sites.
+swissprot_binding.act,str,Actin-binding site information.
+swissprot_binding.binding,str,General binding site information.
+swissprot_binding.ca,str,Calcium-binding site information.
+swissprot_binding.dna,str,DNA-binding site information.
+swissprot_binding.metal,str,Metal-binding site information.
+swissprot_binding.np,str,Nucleotide-binding site information.
+swissprot_binding.zn,str,Zinc-binding site information.
+swissprot_binding.pubmed,str,PubMed ID for references related to binding sites.
+swissprot_binding.all,str,All binding site information from Swiss-Prot.
+swissprot_domains.uniprotkb,str,UniProtKB accession number for protein domains.
+swissprot_domains.domain,str,Domain information from Swiss-Prot.
+swissprot_domains.intramem,str,Intramembrane region information.
+swissprot_domains.motif,str,Motif information.
+swissprot_domains.peptide,str,Peptide information.
+swissprot_domains.repeat,str,Repeat region information.
+swissprot_domains.topo,str,Topological domain information.
+swissprot_domains.transmem,str,Transmembrane region information.
+swissprot_domains.pubmed,str,PubMed ID for references related to protein domains.
+swissprot_domains.all,str,All protein domain information from Swiss-Prot.
+swissprot_ptm.uniprotkb,str,UniProtKB accession number for post-translational modifications (PTM).
+swissprot_ptm.crosslnk,str,Cross-link information.
+swissprot_ptm.disulfid,str,Disulfide bond information.
+swissprot_ptm.carbohyd,str,Carbohydrate modification information.
+swissprot_ptm.init,str,Initiator methionine information.
+swissprot_ptm.lipid,str,Lipidation information.
+swissprot_ptm.mod,str,General modification information.
+swissprot_ptm.propep,str,Propeptide information.
+swissprot_ptm.signal,str,Signal peptide information.
+swissprot_ptm.transit,str,Transit peptide information.
+swissprot_ptm.pubmed,str,PubMed ID for references related to PTMs.
+swissprot_ptm.all,str,All PTM information from Swiss-Prot.
+target.therapy,str,Therapeutic target information.
+target.rationale,str,Rationale for therapeutic targeting.
+trinity.Rnaedit,str,RNA editing information from Trinity.
+ucscgenomebrowser.link,str,Link to UCSC Genome Browser for variant.
+uk10k_cohort.uk10k_twins_ac,float,Allele count in UK10K Twins cohort.
+uk10k_cohort.uk10k_twins_af,float,Allele frequency in UK10K Twins cohort.
+uk10k_cohort.uk10k_alspac_ac,float,Allele count in UK10K ALSPAC cohort.
+uk10k_cohort.uk10k_alspac_af,float,Allele frequency in UK10K ALSPAC cohort.
+uk10k_cohort.uk10k_ac,float,Allele count in UK10K cohort.
+uk10k_cohort.uk10k_af,float,Allele frequency in UK10K cohort.
+uniprot.acc,str,UniProt accession number.
+uniprot_domain.domain,str,Domain information from UniProt.
+varity_r.varity_r,float,VARITY_R score.
+varity_r.varity_er,float,VARITY_ER score.
+varity_r.varity_r_loo,float,VARITY_R score with leave-one-out cross-validation.
+varity_r.varity_er_loo,float,VARITY_ER score with leave-one-out cross-validation.
+varity_r.p_vid,str,Variant ID associated with VARITY scores.
+vcfinfo.phred,int,Phred
+vcfinfo.filter,str,VCF Filter
+vcfinfo.zygosity,str,Zygosity
+vcfinfo.alt_reads,str,Alternate reads
+vcfinfo.tot_reads,int,Total reads
+vcfinfo.af,float,Variant AF
+vcfinfo.hap_block,str,Haplotype block ID
+vcfinfo.hap_strand,str,Haplotype strand ID
+vest.transcript,str,Transcript ID for VEST.
+vest.score,float,VEST score predicting the pathogenicity of variants.
+vest.pval,float,p-value of the VEST score.
+vest.all,str,All information from VEST.
+vista_enhancer.element,str,VISTA enhancer element ID.
+vista_enhancer.features,str,Features of the VISTA enhancer element.
+dbcid.evidence,str,Evidence for variant-disease association from DBCID.
+dbsnp.rsid,str,dbSNP rsID.
+dbsnp_common.rsid,str,Common dbSNP rsID.
+dbscsnv.ada_score,float,ADA score from dbscSNV.
+dbscsnv.rf_score,float,Random forest score from dbscSNV.
+fitcons.fitcons_coding_score,float,FitCons score for coding regions.
+fitcons.fitcons_coding_rankscore,float,Rank score of the FitCons coding prediction.
+fitcons.fitcons_coding_pred,int,Prediction from FitCons for coding regions.
+gnomad.af,float,Allele frequency in gnomAD.
+gnomad.af_afr,float,Allele frequency in African population in gnomAD.
+gnomad.af_amr,float,Allele frequency in American population in gnomAD.
+gnomad.af_asj,float,Allele frequency in Ashkenazi Jewish population in gnomAD.
+gnomad.af_eas,float,Allele frequency in East Asian population in gnomAD.
+gnomad.af_fin,float,Allele frequency in Finnish population in gnomAD.
+gnomad.af_nfe,float,Allele frequency in Non-Finnish European population in gnomAD.
+gnomad.af_oth,float,Allele frequency in Other populations in gnomAD.
+gnomad.af_sas,float,Allele frequency in South Asian population in gnomAD.
+gnomad_gene.transcript,str,Transcript ID in gnomAD.
+gnomad_gene.oe_lof,float,Observed/expected ratio for loss-of-function variants in gnomAD.
+gnomad_gene.oe_mis,float,Observed/expected ratio for missense variants in gnomAD.
+gnomad_gene.oe_syn,float,Observed/expected ratio for synonymous variants in gnomAD.
+gnomad_gene.lof_z,float,Z-score for loss-of-function variants in gnomAD.
+gnomad_gene.mis_z,float,Z-score for missense variants in gnomAD.
+gnomad_gene.syn_z,float,Z-score for synonymous variants in gnomAD.
+gnomad_gene.pLI,float,Probability of being loss-of-function intolerant in gnomAD.
+gnomad_gene.pRec,float,Probability of being recessive in gnomAD.
+gnomad_gene.pNull,float,Probability of being null in gnomAD.
+gnomad_gene.all,str,All gene-related information from gnomAD.
+gnomad3.af,float,Allele frequency in gnomAD v3.
+gnomad3.af_afr,float,Allele frequency in African population in gnomAD v3.
+gnomad3.af_asj,float,Allele frequency in Ashkenazi Jewish population in gnomAD v3.
+gnomad3.af_eas,float,Allele frequency in East Asian population in gnomAD v3.
+gnomad3.af_fin,float,Allele frequency in Finnish population in gnomAD v3.
+gnomad3.af_lat,float,Allele frequency in Latin American population in gnomAD v3.
+gnomad3.af_nfe,float,Allele frequency in Non-Finnish European population in gnomAD v3.
+gnomad3.af_oth,float,Allele frequency in Other populations in gnomAD v3.
+gnomad3.af_sas,float,Allele frequency in South Asian population in gnomAD v3.
+gnomad3_counts.nhomalt,int,Number of homozygous alternate alleles in gnomAD v3.
+gnomad3_counts.xx,int,Number of homozygous individuals (XX) in gnomAD v3.
+gnomad3_counts.xy,int,Number of homozygous individuals (XY) in gnomAD v3.
+gnomad3_counts.afr,int,Number of African individuals in gnomAD v3.
+gnomad3_counts.afr_xx,int,Number of African XX individuals in gnomAD v3.
+gnomad3_counts.afr_xy,int,Number of African XY individuals in gnomAD v3.
+gnomad3_counts.ami,int,Number of Amish individuals in gnomAD v3.
+gnomad3_counts.ami_xx,int,Number of Amish XX individuals in gnomAD v3.
+gnomad3_counts.ami_xy,int,Number of Amish XY individuals in gnomAD v3.
+gnomad3_counts.amr,int,Number of American individuals in gnomAD v3.
+gnomad3_counts.amr_xx,int,Number of American XX individuals in gnomAD v3.
+gnomad3_counts.amr_xy,int,Number of American XY individuals in gnomAD v3.
+gnomad3_counts.asj,int,Number of Ashkenazi Jewish individuals in gnomAD v3.
+gnomad3_counts.asj_xx,int,Number of Ashkenazi Jewish XX individuals in gnomAD v3.
+gnomad3_counts.asj_xy,int,Number of Ashkenazi Jewish XY individuals in gnomAD v3.
+gnomad3_counts.eas,int,Number of East Asian individuals in gnomAD v3.
+gnomad3_counts.eas_xx,int,Number of East Asian XX individuals in gnomAD v3.
+gnomad3_counts.eas_xy,int,Number of East Asian XY individuals in gnomAD v3.
+gnomad3_counts.fin,int,Number of Finnish individuals in gnomAD v3.
+gnomad3_counts.fin_xx,int,Number of Finnish XX individuals in gnomAD v3.
+gnomad3_counts.fin_xy,int,Number of Finnish XY individuals in gnomAD v3.
+gnomad3_counts.mid,int,Number of Middle Eastern individuals in gnomAD v3.
+gnomad3_counts.mid_xx,int,Number of Middle Eastern XX individuals in gnomAD v3.
+gnomad3_counts.mid_xy,int,Number of Middle Eastern XY individuals in gnomAD v3.
+gnomad3_counts.nfe,int,Number of Non-Finnish European individuals in gnomAD v3.
+gnomad3_counts.nfe_xx,int,Number of Non-Finnish European XX individuals in gnomAD v3.
+gnomad3_counts.nfe_xy,int,Number of Non-Finnish European XY individuals in gnomAD v3.
+gnomad3_counts.oth,int,Number of Other individuals in gnomAD v3.
+gnomad3_counts.oth_xx,int,Number of Other XX individuals in gnomAD v3.
+gnomad3_counts.oth_xy,int,Number of Other XY individuals in gnomAD v3.
+gnomad3_counts.sas,int,Number of South Asian individuals in gnomAD v3.
+gnomad3_counts.sas_xx,int,Number of South Asian XX individuals in gnomAD v3.
+gnomad3_counts.sas_xy,int,Number of South Asian XY individuals in gnomAD v3.
+mirbase.transcript,str,Transcript ID from miRBase.
+mirbase.id,str,miRBase ID.
+mirbase.name,str,miRBase name.
+mirbase.derives_from,str,miRBase derivation information.
+ncer.score,float,NCER score.
+ncrna.ncrnaclass,str,ncRNA class
+ncrna.ncrnaname,str,ncRNA name.
+phi.phi,float,PHI (Pathogenic Human Infection) score.

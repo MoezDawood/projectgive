@@ -1,0 +1,14 @@
+services:
+  slicer:
+    build: .
+    image: projectgive-slicer:latest
+    container_name: projectgive-slicer
+    ports:
+      - "${SLICER_PORT:-8501}:8501"
+    environment:
+      SLICER_DATA_DIR: /data
+      SLICER_STATE_DIR: /state
+    volumes:
+      - ./data:/data
+      - ./state:/state
+    restart: unless-stopped

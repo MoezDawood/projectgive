@@ -1,0 +1,8 @@
+.git
+.gitignore
+README.md
+data/*
+!data/.gitkeep
+!data/example.csv
+state/*
+!state/.gitkeep

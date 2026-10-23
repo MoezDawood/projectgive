@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+data/*
+!data/.gitkeep
+!data/example.csv
+state/*
+!state/.gitkeep
+!state/SavedSlicerFilterSet_*.json

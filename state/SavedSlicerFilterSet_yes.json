@@ -1,0 +1,13 @@
+{
+  "filter_name": "yes",
+  "created_date": "2025-12-29T09:12:33.105810",
+  "fields": [
+    {
+      "field": "coding",
+      "value": "Yes",
+      "operator": "contains",
+      "operator_index": 0,
+      "is_multi_value": false
+    }
+  ]
+}
